@@ -32,6 +32,7 @@ body{
     font-family:garamond;
     font-weight:none;
     font-variant: normal;
+    text-decoration: underline;
 }
 
 .centro{
@@ -48,6 +49,8 @@ body{
     font-family:georgia;
     font-weight:bolder;
     font-variant: normal;
+    text-transform: uppercase;
+    text-decoration: line-through;
 }
 
 .trimestre{
@@ -64,4 +67,7 @@ body{
     font-family:lucida;
     font-weight:none;
     font-variant: small-caps;
+   text-transform: capitalize;
+   text-decoration:overline;
+
 }
