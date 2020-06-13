@@ -1,0 +1,35 @@
+body {background:#163DDA;
+color:#ffffff;
+font-size:20px;
+font-family: arial;
+margin:10px;
+padding:10px;
+text-align: center;
+word-spacing:7px;
+text-indent: 17px;
+
+}
+
+h1{
+    color:#F97304;
+    font-size:90px;
+    font-family: stencil;
+    text-decoration:underline;
+    text-decoration-color: #980DE7;
+    
+    
+}
+
+h2 {
+    color:#3D6F71;
+    font-size:45px;
+    font-family:freestyle script;
+    text-decoration:overline;
+}
+
+h3 {
+    color:#24C448;
+    font-size:35px;
+    font-family:lucida calligraphy;
+    text-decoration:line-through;
+}
