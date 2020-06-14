@@ -1,33 +1,38 @@
 .caja1 {
-    position: absolute;
-    background-color:blue;
-    left:10px;
-    top:10px;
+    background: lightblue;
+    color:white;
     width:400px;
-    height: 400px;
+    height:400px;
+    font-family: rockwell;
+    font-size:25px;
+    position: relative;
+    bottom: 10px;
+    left: 10px;
     z-index:1;
-
-};
-
+}
 
 .caja2 {
-    position: absolute;
-    background-color:black;
-    left:50px;
-    top:50px;
-    width:300px;
-    height: 300px;
-    z-index:2;
-
-};
+    background: blue;
+    color:gray;
+    width: 300px;
+    height:300px;
+    font-family:mv boli ;
+    font-size:25px;
+    position: relative;
+    top: -380px;
+    left: 50px;
+    z-index:3;
+}
 
 .caja3 {
-    position: absolute;
-    background-color:orange;
-    left:30px;
-    top:30px;
+    background: red;
+    color:blueviolet;
     width:350px;
-    height: 350px;
-    z-index:3;
-
-};
+    height:350px;
+    font-family:onyx ;
+    font-size:25px;
+    position: relative;
+    top: -730px;
+    right:-20px;
+    z-index:2;
+}
