@@ -1,0 +1,18 @@
+.cuadrado {
+    list-style-type:square;
+    font-family: arial;
+    
+}
+
+.asterisco {
+    list-style-type:armenian;
+    font-family: harrington;
+    
+}
+
+
+.numeros {
+    list-style-type:decimal;
+    font-family: tahoma;
+    
+}
