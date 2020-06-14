@@ -1,0 +1,33 @@
+.caja1 {
+    position: absolute;
+    background-color:blue;
+    left:10px;
+    top:10px;
+    width:400px;
+    height: 400px;
+    z-index:1;
+
+};
+
+
+.caja2 {
+    position: absolute;
+    background-color:black;
+    left:50px;
+    top:50px;
+    width:300px;
+    height: 300px;
+    z-index:2;
+
+};
+
+.caja3 {
+    position: absolute;
+    background-color:orange;
+    left:30px;
+    top:30px;
+    width:350px;
+    height: 350px;
+    z-index:3;
+
+};
