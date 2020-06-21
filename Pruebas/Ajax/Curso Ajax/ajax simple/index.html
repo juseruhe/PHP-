@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Simple</title>
+</head>
+<body>
+    <button onclick="SendRequest()">
+        Send Request Ajax
+    </button>
+
+<h1 id="title"></h1>
+
+    <script>
+        function SendRequest() {
+           var elObjeto = new XMLHttpRequest();
+           elObjeto.open("POST","backend.php", true);
+           elObjeto.setRequestHeader("Content-Type","application/x-www-form-unlercoded");
+           elObjeto.onreadystatechange= function () {
+               document.getElementById("title").innerHTML= elObjeto.responseText;
+           }
+           elObjeto.send("nombre=Juan");
+        }
+    </script>
+</body>
+</html>
