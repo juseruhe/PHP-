@@ -23,10 +23,10 @@ $nombre = $_POST["nombre"];
 
 $bd = mysqli_connect("localhost","root","","ingresorelacional");
 
-$insercion = mysqli_query($bd,"INSERT INTO usuario(tipo_td,numero,nombre)
+$insercion = mysqli_query($bd,"INSERT INTO usuario(td,numero,nombre)
 VALUES('$td','$numero','$nombre') " );
 
 
-echo "<p> Conectar </P>";
+echo "<p> Datos ingresados a la Base de Datos </P>";
 
 ?>

@@ -19,7 +19,7 @@
 $bd= mysqli_connect("localhost","root","","ingresorelacional");
 
 $consulta= "SELECT nombre_td,numero,nombre FROM usuario 
-join tipo_documento on usuario.tipo_td = tipo_documento.id ";
+join tipo_documento on usuario.td = tipo_documento.id ";
 
 
 $conectar = mysqli_query($bd,$consulta);
@@ -28,7 +28,7 @@ $buscar= mysqli_fetch_array($conectar);
 
 
 
-while ($buscar)  {
+while ($buscar= mysqli_fetch_array($conectar))  {
 ?>
 <?php
 
