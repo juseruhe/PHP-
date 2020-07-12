@@ -1,30 +1,30 @@
 <?php
 
-$td = $_POST[td];
+$td = $_POST["td"];
 switch($td){
 
-case "Cédula": $cosa= "TD01";
+case "Cédula": $td= "TD01";
 break;
 
-case "Tarjeta": $cosa= "TD02";
+case "Tarjeta": $td= "TD02";
 break;
 
 
-default: "";
+default: echo "No hay documentación";
 break;
 };
 
 
-$numero = $_POST[numero];
+$numero = $_POST["numero"];
 
 
-$nombre = $_POST[nombre];
+$nombre = $_POST["nombre"];
 
 
 $bd = mysqli_connect("localhost","root","","ingresorelacional");
 
-$insercion = mysqli_query($bd,"INSERT INTO usuario(numero_td,tipo_documento,nombre)
-VALUES('$cosa','$numero','$nombre') " );
+$insercion = mysqli_query($bd,"INSERT INTO usuario(tipo_td,numero,nombre)
+VALUES('$td','$numero','$nombre') " );
 
 
 echo "<p> Conectar </P>";
