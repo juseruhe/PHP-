@@ -12,13 +12,14 @@
 <td> <h4> Tipo de Documento </h4> </td>
 <td> <h4>  Número </h4> </td>
 <td> <h4>  Nombre </h4> </td>
+<td> <h4>  Foto </h4> </td>
 </tr>
 
 <?php
 
 $bd= mysqli_connect("localhost","root","","ingresorelacional");
 
-$consulta= "SELECT nombre_td,numero,nombre FROM usuario 
+$consulta= "SELECT nombre_td,numero,nombre,foto FROM usuario 
 join tipo_documento on usuario.td = tipo_documento.id ";
 
 
@@ -30,21 +31,23 @@ $buscar= mysqli_fetch_array($conectar);
 
 while ($buscar= mysqli_fetch_array($conectar))  {
 ?>
-<?php
 
-echo"
+
+
 <tr> 
-<td> <h4>  $buscar[nombre_td] </h4> </td>
-<td> <h4> $buscar[numero] </h4> </td>
-<td> <h4> $buscar[nombre] </h4> </td>
+<td> <h4> <?php echo " $buscar[nombre_td] "?> </h4> </td>
+<td> <h4> <?php echo "$buscar[numero] "?> </h4> </td>
+<td> <h4> <?php  echo "$buscar[nombre]" ?></h4> </td>
+<td> <h4> <?php  echo " $buscar[foto]" ?> </h4> </td>
 </tr>
 
 
 
-";
+
+<?php
 }
 
 ?>
-
+</table>
 </body>
 </html>
