@@ -6,7 +6,7 @@
     <title>Ingreso Relacional</title>
 </head>
 <body>
-    <form action="confirmar.php" method="POST"> 
+    <form action="confirmar.php" method="POST" enctype="multipart/form-data"> 
 
      Tipo de Documento: <select name="td"> 
      <option> Cédula </option>
@@ -14,7 +14,7 @@
         </select>
      Numero:    <input type="number" name="numero"/>
      Nombre:       <input type="text" name="nombre"/>
-     foto           <input type="file" name="foto" value="Subir Foto"/>
+     foto           <input type="file" name="foto" id="foto" value="Subir Foto"/>
      <input type="submit" value="Ingresar">
 
 

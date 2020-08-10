@@ -38,7 +38,7 @@ while ($buscar= mysqli_fetch_assoc($conectar))  {
 <td> <h4> <?php echo " $buscar[nombre_td] "?> </h4> </td>
 <td> <h4> <?php echo "$buscar[numero] "?> </h4> </td>
 <td> <h4> <?php  echo "$buscar[nombre]" ?></h4> </td>
-<td> <h4> <?php  echo " $buscar[foto]" ?> </h4> </td>
+ <td> <img src="../Ingreso Relacional/<?php echo"$buscar[foto]"     ?>" width=100 height=100/>  </td>
 </tr>
 
 
