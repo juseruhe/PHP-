@@ -10,7 +10,7 @@ nombre_td varchar(55) not null
 
 create table usuario(
 td varchar(15) not null,
-numero int(30) not null
+numero int(30) not null,
 nombre varchar(55) not null,
 foto varchar(200)
 );
