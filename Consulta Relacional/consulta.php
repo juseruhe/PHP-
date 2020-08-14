@@ -19,7 +19,7 @@
 
 $bd= mysqli_connect("localhost","root","","ingresorelacional");
 
-$consulta= "SELECT * FROM usuario 
+$consulta= "SELECT *  FROM usuario 
 join tipo_documento on usuario.td = tipo_documento.id ";
 
 
@@ -32,13 +32,11 @@ $conectar = mysqli_query($bd,$consulta);
 while ($buscar= mysqli_fetch_assoc($conectar))  {
 ?>
 
-
-
 <tr> 
 <td> <h4> <?php echo " $buscar[nombre_td] "?> </h4> </td>
 <td> <h4> <?php echo "$buscar[numero] "?> </h4> </td>
 <td> <h4> <?php  echo "$buscar[nombre]" ?></h4> </td>
- <td> <img src="../Ingreso Relacional/<?php echo"$buscar[foto]"     ?>" width=100 height=100/>  </td>
+ <td> <img src="../Ingreso Relacional/<?php echo"$buscar[foto]"?>" width=100 height=100/>  </td>
 </tr>
 
 

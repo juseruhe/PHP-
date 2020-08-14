@@ -22,3 +22,6 @@ alter table usuario
 add primary key(td,numero);
 
 
+
+
+insert into tipo_documento(td,nombre_td) values ('Cédula', 'TD01'),('Tarjeta', 'TD02' );

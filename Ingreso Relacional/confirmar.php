@@ -35,8 +35,11 @@ copy($ruta,$destino);
 
 $bd = mysqli_connect("localhost","root","","ingresorelacional");
 
-$insercion = mysqli_query($bd,"INSERT INTO usuario(td,numero,nombre,foto)
-VALUES('$td','$numero','$nombre','$destino') " );
+$consulta = "INSERT INTO usuario(td,numero,nombre,foto)
+VALUES('$td','$numero','$nombre','$destino') ";
+
+
+$insercion = mysqli_query($bd,$consulta);
 
 
 echo "<p> Datos ingresados a la Base de Datos </P>";
